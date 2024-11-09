@@ -47,7 +47,7 @@ export default function Details({ project }: Props): JSX.Element {
             What <span className="text-pink">Technologies</span> are used?
           </h1>
           <div className="flex flex-col sm:flex-row justify-center items-center text-center">
-            {project.tags.map((t): JSX.Element => {
+            {project?.tags?.map((t): JSX.Element => {
               const tech = technologies.find((te) => te.name === t);
               return (
                 tech && (

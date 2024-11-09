@@ -47,7 +47,7 @@ const WordCloudComponent = () => {
   useEffect(() => {
     if (wordCloudRef.current) {
       // Convert the words array to the format required by wordcloud2: [word, frequency]
-      const wordList = words.map((word) => [word.text, word.size]);
+      const wordList = words?.map((word) => [word.text, word.size]);
 
       WordCloud(wordCloudRef.current, {
         list: wordList,

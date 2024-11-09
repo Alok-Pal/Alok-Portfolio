@@ -34,7 +34,7 @@ const ProjectsPage = (): JSX.Element => {
             </div>
             <div>
               <div className="mx-auto text-center">
-                {category.map((c) => (
+                {category?.map((c) => (
                   <button
                     key={c.value}
                     type="button"
@@ -52,7 +52,7 @@ const ProjectsPage = (): JSX.Element => {
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-4 place-items-center">
-              {projects.map((project: Project) => (
+              {projects?.map((project: Project) => (
                 <ProjectCard
                   project={project}
                   key={project.slug}
