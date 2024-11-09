@@ -7,7 +7,7 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
     const dbClient: MongoClient = await getDbClient();
     const data = await dbClient
       .db()
-      .collection('companies')
+      .collection('companiesData')
       .find({})
       .project({ _id: 0 })
       .sort({ order: 1 })

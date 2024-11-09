@@ -35,6 +35,10 @@ const technologies = [
     name: 'ReactJS'
   },
   {
+    src: '/images/skills/react.svg',
+    name: 'React Native'
+  },
+  {
     src: '/images/skills/js.svg',
     name: 'JavaScript'
   },
@@ -101,6 +105,10 @@ const technologies = [
   {
     src: '/images/skills/Tesseract.svg',
     name: 'Tesseract'
+  },
+  {
+    src: '/images/skills/NextJs.svg',
+    name: 'NextJs'
   }
 ];
 
